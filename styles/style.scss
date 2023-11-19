@@ -1,0 +1,221 @@
+@import "variables/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  width: 1140px;
+  padding-left: 150px;
+}
+
+.main-header {
+  min-height: 559px;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(
+      180deg,
+      #6a655d 26.56%,
+      rgba(106, 101, 93, 0.35) 91.15%
+    ),
+    linear-gradient(
+      270deg,
+      #6a655d 0%,
+      rgba(106, 101, 93, 0.95) 54.79%,
+      rgba(196, 196, 196, 0) 100%
+    );
+}
+
+.main-header__menu {
+  z-index: 10;
+  padding-top: 20px;
+  padding-left: 150px;
+  position: absolute;
+  top: 0;
+}
+
+.menu-wrap {
+  margin-bottom: 41px;
+  display: flex;
+  align-items: center;
+}
+
+.main-header__search {
+  padding-right: 32px;
+}
+
+.main-header__search_form {
+  position: relative;
+  width: 245px;
+  margin: 0 auto;
+}
+
+.main-header__search_input,
+.main-header__search_button {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+.main-header__search_input {
+  width: 100%;
+  height: 31px;
+  background: linear-gradient(
+      180deg,
+      #6a655d 26.56%,
+      rgba(106, 101, 93, 0.35) 91.15%
+    ),
+    linear-gradient(
+      270deg,
+      #6a655d 0%,
+      rgba(106, 101, 93, 0.95) 54.79%,
+      rgba(196, 196, 196, 0) 100%
+    );
+  padding: 7px 16px;
+  border-radius: 20px;
+  border: 1px solid $colorWhite;
+  color: $colorWhite;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+input::-webkit-input-placeholder {
+  color: $colorWhite;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+input:-moz-placeholder {
+  color: $colorWhite;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.main-header__search_button {
+  // height: 26px;
+  // width: 26px;
+  position: absolute;
+  top: 6px;
+  right: 7px;
+  background: linear-gradient(
+      180deg,
+      #6a655d 26.56%,
+      rgba(106, 101, 93, 0.35) 91.15%
+    ),
+    linear-gradient(
+      270deg,
+      #6a655d 0%,
+      rgba(106, 101, 93, 0.95) 54.79%,
+      rgba(196, 196, 196, 0) 100%
+    );
+
+  svg {
+    width: 18px;
+    height: 17px;
+    fill-opacity: 50%;
+  }
+}
+
+.catalog-nav {
+  margin-bottom: 75px;
+}
+.main-nav__link {
+  padding: 0px 9px 7px 0px;
+  text-decoration: none;
+  color: #dcdcdc;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main-nav__link:hover {
+  color: $colorOrangeBrand;
+}
+
+.catalog-nav__link {
+  padding: 0px 9px 2px 0px;
+  text-decoration: none;
+  color: $colorWhite;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.catalog-nav__link:hover {
+  color: $colorOrangeBrand;
+}
+
+.swiper {
+  width: 827px;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  height: 559px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: $colorWhite;
+  width: 24.891px;
+  height: 42.392px;
+}
+
+.swiper-button-prev {
+  margin-left: 150px;
+}
+
+.swiper-button-next {
+  margin-right: 239px;
+}
+
+.swiper-button-prev:hover {
+  color: $colorOrangeBrand;
+}
+
+.swiper-button-next:hover {
+  color: $colorOrangeBrand;
+}
+
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background: none;
+  border: 1px solid $colorWhite;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: $colorWhite;
+}
+
+.main-header__companyInfo {
+  width: 463px;
+  height: 559px;
+  background-color: $colorOrangeBrand;
+  margin-right: 150px;
+}
+
+.mySwiper {
+  position: relative;
+}
